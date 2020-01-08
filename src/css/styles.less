@@ -923,6 +923,86 @@ a {
     }
 }
 
+.testimonials {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+
+    &-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        p {
+            width: 45%;
+            text-align: center;
+        }
+    }
+
+    &-inner {
+        background-color: @color_white;
+        padding: 50px 100px;
+    }
+
+    &-slide {
+        &-inner {
+            display: flex;
+            align-items: flex-start;
+
+            img {
+                margin-right: 70px;
+            }
+
+            &-text {
+                p {
+                    color: @color_grey;
+                    font-family: @font_opensans;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0.8px;
+                }
+
+                h4 {
+                    color: @color_green;
+                    font-family: @font_opensans;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.64px;
+                }
+
+                h5 {
+                    color: @color_black2;
+                    font-family: @font_opensans;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.56px;
+                }
+            }
+        }
+    }
+
+    &-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+
+        span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid @color_green;
+            margin: 0 5px;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Big John Regular';
     font-style: normal;
