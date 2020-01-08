@@ -1299,7 +1299,73 @@ a {
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: 0.14px;
+                    cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 610px;
+
+    &-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            width: 40%;
+        }
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        min-height: 272px;
+        margin-top: 50px;
+
+        &-top {
+            height: 136px;
+            background-image: url(../img/contact_banner1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-bot {
+            height: 136px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: @color_white;
+
+            h4 {
+                color: @color_black2;
+                font-family: @font_opensans;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.64px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+            }
+
+            a {
+                color: @color_grey;
+                font-family: @font_opensans;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
             }
         }
     }
