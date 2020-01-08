@@ -82,6 +82,11 @@ a {
     font-weight: 700;
 }
 
+.white {
+    color: @color_white;
+    font-weight: 700;
+}
+
 .button {
     color: inherit;
     font-family: @font_opensans;
@@ -91,7 +96,6 @@ a {
     padding: 12px 30px;
     border-radius: 19px;
     border: 1px solid #333b46;
-    cursor: pointer;
 }
 
 .slider {
@@ -422,7 +426,7 @@ a {
             }
         }
 
-        div {
+        a {
             border: 1px solid @color_white;
         }
     }
@@ -597,6 +601,144 @@ a {
             font-family: @font_bigjohn;
             font-size: 16px;
             font-weight: 400;
+        }
+    }
+}
+
+.portfolio {
+    min-height: 1630px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            width: 40%;
+        }
+    }
+
+    &-menu {
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 55px;
+            margin-top: 80px;
+
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                color: @color_black2;
+                font-family: @font_opensans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 12px;
+                cursor: pointer;
+
+                span {
+                    display: none;
+                    margin-top: 10px;
+                    width: 80%;
+                    height: 2px;
+                    background-color: @color_green;
+                }
+            }
+        }
+    }
+
+    &-images {
+        &-item {
+            position: relative;
+            margin-top: 10px;
+
+            &-layer {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                display: none;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: rgba(0, 0, 0, 0.85);
+                padding: 0 30px;
+
+                h4 {
+                    color: @color_green;
+                    margin-bottom: 0;
+                }
+
+                .line {
+                    height: 2px;
+                    width: 30px;
+                    background-color: @color_green;
+                }
+
+                p {                    
+                    line-height: 20px;
+                    font-size: 12px;
+                    letter-spacing: 0.6;
+                    color: @color_grey2;
+                    margin-bottom: 0;
+                }
+
+                &-icons {
+                    display: flex;
+
+                    &-img {
+                        width: 28px;
+                        height: 28px;
+                        margin-right: 7px;
+                        background-color: #000000;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            background-color: @color_green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-banner {
+        background-image: url(../img/portfolio_bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        margin-top: 40px;
+
+        h4 {
+            color: @color_white;
+            font-family: @font_opensans;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: @color_white;
+            border: 1px solid @color_white;
         }
     }
 }
