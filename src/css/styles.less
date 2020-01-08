@@ -82,6 +82,7 @@ a {
     padding: 12px 30px;
     border-radius: 19px;
     border: 1px solid #333b46;
+    cursor: pointer;
 }
 
 .slider {
@@ -306,6 +307,113 @@ a {
 
         p {
             font-size: 14px;
+        }
+    }
+}
+
+.feature {
+    &-caption {
+        background-color: @color_white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 230px;
+    }
+
+    &-image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 319px;
+
+        &:nth-child(2) {
+            background-image: url(../img/work_banner1.png);
+        }
+        
+        &:nth-child(3) {
+            background-image: url(../img/work_banner2.png);
+        }
+
+        &:nth-child(4) {
+            background-image: url(../img/work_banner3.png);
+        }
+
+        &-layer {
+            width: 100%;
+            height: 100%;
+            color: @color_white;
+            font-family: @font_sourcesanspro;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+    }
+
+    &-banner {
+        background-image: url(../img/work_bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 113px;
+        color: @color_white;
+
+        h4 {
+            color: @color_white;
+            font-family: @font_opensans;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        div {
+            border: 1px solid @color_white;
+        }
+    }
+}
+
+.feature2 {
+    background-image: url(../img/work_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 113px;
+        color: @color_white;
+
+        h4 {
+            color: @color_white;
+            font-family: @font_opensans;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        div {
+            border: 1px solid @color_white;
         }
     }
 }
