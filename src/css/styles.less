@@ -2,7 +2,7 @@
 
 @font_opensans: 'Open Sans', sans-serif;
 @font_roboto: 'Roboto', sans-serif;
-@font_sourcesans: 'Source Sans Pro', sans-serif;
+@font_sourcesanspro: 'Source Sans Pro', sans-serif;
 @font_bigjohn: 'Big John Regular', sans-serif;
 
 
@@ -18,10 +18,129 @@
 a {
     text-decoration: none;
     color: inherit;
-    
+
     &:hover {
         text-decoration: none;
         color: inherit;
+    }
+}
+
+.slider {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 600px;
+
+    &-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+
+        &-logo {
+            color: @color_white;
+            font-family: @font_bigjohn;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        &-mini {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 21px;            
+            cursor: pointer;
+
+            @media (min-width: 771px) {
+                display: none;
+            }
+
+            span {
+                width: 30px;
+                height: 3px;
+                border-radius: 1px;
+                background-color: @color_white;
+            }
+        }
+
+        &-menu {
+            @media (max-width: 771px) {
+                display: none;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin: 0;
+
+                li {
+                    list-style-type: none;
+                    color: @color_white;
+                    font-family: @font_opensans;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    &-caption {
+        height: 65%;
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            h4 {
+                color: @color_white;
+                font-family: @font_sourcesanspro;
+                font-size: 35px;
+                font-weight: 300;
+                line-height: 70px;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+            }
+
+            p {
+                color: @color_white;
+                font-family: @font_opensans;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0.8px;
+                width: 80%;
+            }
+        }        
+
+        &-down {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            background-color: @color_green;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            cursor: pointer;       
+        }
     }
 }
 
