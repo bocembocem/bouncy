@@ -1371,6 +1371,54 @@ a {
     }
 }
 
+.contact2 {
+    display: flex;
+    align-items: center;
+    min-height: 550px;
+
+    input {
+        width: 100%;
+        border: 1px solid #d8dce0;
+        color: #a9a9a9;
+        height: 40px;
+        font-family: @font_opensans;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.14px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+        }
+    }
+
+    &-big {
+        input {
+            height: 190px;
+        }
+    }
+
+    &-submit {
+        input {
+            border: 0;
+            background-color: @color_green;
+            color: @color_white;
+            font-family: @font_opensans;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.16px;
+            height: 53px;
+            cursor: pointer;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Big John Regular';
     font-style: normal;
