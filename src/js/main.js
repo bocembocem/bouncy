@@ -30,7 +30,9 @@ $(function() {
     /* section contact, blocks background rules */
 
     $('.contact-block-top').each(function() {
-        // npm run build 'url(./img/contact_banner' + contactBgCount +'.png)' or npm run dev // npm run build 'url(../img/contact_banner' + contactBgCount +'.png)'
+        // npm run build 'url(./img/contact_banner' + contactBgCount +'.png)' 
+        // or  
+        // npm run dev 'url(../img/contact_banner' + contactBgCount +'.png)'
         $(this).css({
             backgroundImage: 'url(./img/contact_banner' + contactBgCount +'.png)'
         });
